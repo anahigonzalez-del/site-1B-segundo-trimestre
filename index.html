@@ -59,10 +59,10 @@
          <script>
           const botoes = document.querySelectorAll("main button");
           botoes.forEach (function (botao) {
-          botoesaddEventListener("click", botoesClicado);
-          function botoes() {
+          botao.addEventListener("click", botaoClicado);
+          function botaoClicado() {
           console.log("fui clicado");
-          let texto = botoes.querySelector("span");
+          let texto = botao.querySelector("span");
           texto.textContent++;
         }
           });
